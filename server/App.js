@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(cookieParser())
 
-require("dotenv").config();
-// dotenv.config({ path: "./config.env" });
+// require("dotenv").config();
+dotenv.config({ path: "./config.env" });
 require('./db/Conn');
 
 
